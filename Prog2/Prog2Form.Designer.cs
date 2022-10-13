@@ -71,12 +71,14 @@
             this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
             this.toolStripMenuItemAbout.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemAbout.Text = "About";
+            this.toolStripMenuItemAbout.Click += new System.EventHandler(this.toolStripMenuItemAbout_Click);
             // 
             // toolStripMenuItemExit
             // 
             this.toolStripMenuItemExit.Name = "toolStripMenuItemExit";
             this.toolStripMenuItemExit.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemExit.Text = "Exit";
+            this.toolStripMenuItemExit.Click += new System.EventHandler(this.toolStripMenuItemExit_Click);
             // 
             // toolStripDropDownButtonInsert
             // 
@@ -93,13 +95,13 @@
             // toolStripMenuItemAddress
             // 
             this.toolStripMenuItemAddress.Name = "toolStripMenuItemAddress";
-            this.toolStripMenuItemAddress.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemAddress.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItemAddress.Text = "Address";
             // 
             // toolStripMenuItemLetter
             // 
             this.toolStripMenuItemLetter.Name = "toolStripMenuItemLetter";
-            this.toolStripMenuItemLetter.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemLetter.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItemLetter.Text = "Letter";
             // 
             // toolStripDropDownButtonReport
