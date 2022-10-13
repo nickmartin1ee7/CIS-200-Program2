@@ -44,5 +44,12 @@
 
             aboutForm.Show(this);
         }
+
+        private void toolStripMenuItemAddress_Click(object sender, EventArgs e)
+        {
+            var addressForm = new AddressForm(_upv);
+
+            addressForm.Show(this);
+        }
     }
 }
