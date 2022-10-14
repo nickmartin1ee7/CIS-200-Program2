@@ -49,18 +49,12 @@ namespace UPVApp
             var cancelArgs = new CancelEventArgs();
 
             textBox_Validating_NotNullOrWhiteSpace(textBoxName, cancelArgs);
-            if (cancelArgs.Cancel) goto validationend;
             textBox_Validating_NotNullOrWhiteSpace(textBoxAddress1, cancelArgs);
-            if (cancelArgs.Cancel) goto validationend;
             textBox_Validating_NotNullOrWhiteSpace(textBoxAddress2, cancelArgs);
-            if (cancelArgs.Cancel) goto validationend;
             textBox_Validating_NotNullOrWhiteSpace(textBoxCity, cancelArgs);
-            if (cancelArgs.Cancel) goto validationend;
             comboBoxState_Validating(comboBoxState, cancelArgs);
-            if (cancelArgs.Cancel) goto validationend;
             textBoxZip_Validating(textBoxZip, cancelArgs);
 
-        validationend:
             return !cancelArgs.Cancel;
         }
 
@@ -74,7 +68,7 @@ namespace UPVApp
             ResetErrorProvider((Control)sender);
         }
 
-        private void textBox_Validating_NotNullOrWhiteSpace(object sender, System.ComponentModel.CancelEventArgs e)
+        private void textBox_Validating_NotNullOrWhiteSpace(object sender, CancelEventArgs e)
         {
             var textBox = (TextBox)sender;
             if (!string.IsNullOrWhiteSpace(textBox.Text)) return;
@@ -83,7 +77,7 @@ namespace UPVApp
             e.Cancel = true;
         }
 
-        private void comboBoxState_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        private void comboBoxState_Validating(object sender, CancelEventArgs e)
         {
             if (comboBoxState.SelectedIndex != -1) return;
 
@@ -91,7 +85,7 @@ namespace UPVApp
             e.Cancel = true;
         }
 
-        private void textBoxZip_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        private void textBoxZip_Validating(object sender, CancelEventArgs e)
         {
             const int MAX_ZIP_CODE = 99999;
 
