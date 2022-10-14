@@ -64,20 +64,20 @@
             this.toolStripDropDownButtonFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButtonFile.Name = "toolStripDropDownButtonFile";
             this.toolStripDropDownButtonFile.Size = new System.Drawing.Size(38, 22);
-            this.toolStripDropDownButtonFile.Text = "File";
+            this.toolStripDropDownButtonFile.Text = "&File";
             // 
             // toolStripMenuItemAbout
             // 
             this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
-            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(107, 22);
-            this.toolStripMenuItemAbout.Text = "About";
+            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemAbout.Text = "&About";
             this.toolStripMenuItemAbout.Click += new System.EventHandler(this.toolStripMenuItemAbout_Click);
             // 
             // toolStripMenuItemExit
             // 
             this.toolStripMenuItemExit.Name = "toolStripMenuItemExit";
-            this.toolStripMenuItemExit.Size = new System.Drawing.Size(107, 22);
-            this.toolStripMenuItemExit.Text = "Exit";
+            this.toolStripMenuItemExit.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemExit.Text = "E&xit";
             this.toolStripMenuItemExit.Click += new System.EventHandler(this.toolStripMenuItemExit_Click);
             // 
             // toolStripDropDownButtonInsert
@@ -90,20 +90,20 @@
             this.toolStripDropDownButtonInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButtonInsert.Name = "toolStripDropDownButtonInsert";
             this.toolStripDropDownButtonInsert.Size = new System.Drawing.Size(49, 22);
-            this.toolStripDropDownButtonInsert.Text = "Insert";
+            this.toolStripDropDownButtonInsert.Text = "&Insert";
             // 
             // toolStripMenuItemAddress
             // 
             this.toolStripMenuItemAddress.Name = "toolStripMenuItemAddress";
             this.toolStripMenuItemAddress.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemAddress.Text = "Address";
+            this.toolStripMenuItemAddress.Text = "&Address";
             this.toolStripMenuItemAddress.Click += new System.EventHandler(this.toolStripMenuItemAddress_Click);
             // 
             // toolStripMenuItemLetter
             // 
             this.toolStripMenuItemLetter.Name = "toolStripMenuItemLetter";
             this.toolStripMenuItemLetter.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemLetter.Text = "Letter";
+            this.toolStripMenuItemLetter.Text = "&Letter";
             this.toolStripMenuItemLetter.Click += new System.EventHandler(this.toolStripMenuItemLetter_Click);
             // 
             // toolStripDropDownButtonReport
@@ -116,20 +116,20 @@
             this.toolStripDropDownButtonReport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButtonReport.Name = "toolStripDropDownButtonReport";
             this.toolStripDropDownButtonReport.Size = new System.Drawing.Size(55, 22);
-            this.toolStripDropDownButtonReport.Text = "Report";
+            this.toolStripDropDownButtonReport.Text = "&Report";
             // 
             // toolStripMenuItemListAddress
             // 
             this.toolStripMenuItemListAddress.Name = "toolStripMenuItemListAddress";
-            this.toolStripMenuItemListAddress.Size = new System.Drawing.Size(148, 22);
-            this.toolStripMenuItemListAddress.Text = "List Addresses";
+            this.toolStripMenuItemListAddress.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemListAddress.Text = "List &Addresses";
             this.toolStripMenuItemListAddress.Click += new System.EventHandler(this.toolStripMenuItemListAddress_Click);
             // 
             // toolStripMenuItemListParcels
             // 
             this.toolStripMenuItemListParcels.Name = "toolStripMenuItemListParcels";
-            this.toolStripMenuItemListParcels.Size = new System.Drawing.Size(148, 22);
-            this.toolStripMenuItemListParcels.Text = "List Parcels";
+            this.toolStripMenuItemListParcels.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemListParcels.Text = "List &Parcels";
             this.toolStripMenuItemListParcels.Click += new System.EventHandler(this.toolStripMenuItemListParcels_Click);
             // 
             // textBoxListing
