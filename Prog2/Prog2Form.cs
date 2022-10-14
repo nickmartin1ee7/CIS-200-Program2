@@ -60,10 +60,15 @@
             aboutForm.Show(this);
         }
 
+        private void toolStripMenuItemLetter_Click(object sender, EventArgs e)
+        {
+            var letterForm = new LetterForm(_upv);
+            letterForm.Show(this);
+        }
+
         private void toolStripMenuItemAddress_Click(object sender, EventArgs e)
         {
             var addressForm = new AddressForm(_upv);
-
             addressForm.Show(this);
         }
 
@@ -77,7 +82,7 @@
         private void toolStripMenuItemListParcels_Click(object sender, EventArgs e)
         {
             var totalParcelsCost = _upv.ParcelList.Any()
-                ? _upv.ParcelList.Max(p => p.CalcCost())
+                ? _upv.ParcelList.Sum(p => p.CalcCost())
                 : 0;
 
             textBoxListing.Clear();

@@ -95,15 +95,16 @@
             // toolStripMenuItemAddress
             // 
             this.toolStripMenuItemAddress.Name = "toolStripMenuItemAddress";
-            this.toolStripMenuItemAddress.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItemAddress.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemAddress.Text = "Address";
             this.toolStripMenuItemAddress.Click += new System.EventHandler(this.toolStripMenuItemAddress_Click);
             // 
             // toolStripMenuItemLetter
             // 
             this.toolStripMenuItemLetter.Name = "toolStripMenuItemLetter";
-            this.toolStripMenuItemLetter.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItemLetter.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemLetter.Text = "Letter";
+            this.toolStripMenuItemLetter.Click += new System.EventHandler(this.toolStripMenuItemLetter_Click);
             // 
             // toolStripDropDownButtonReport
             // 
@@ -120,14 +121,14 @@
             // toolStripMenuItemListAddress
             // 
             this.toolStripMenuItemListAddress.Name = "toolStripMenuItemListAddress";
-            this.toolStripMenuItemListAddress.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemListAddress.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItemListAddress.Text = "List Addresses";
             this.toolStripMenuItemListAddress.Click += new System.EventHandler(this.toolStripMenuItemListAddress_Click);
             // 
             // toolStripMenuItemListParcels
             // 
             this.toolStripMenuItemListParcels.Name = "toolStripMenuItemListParcels";
-            this.toolStripMenuItemListParcels.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemListParcels.Size = new System.Drawing.Size(148, 22);
             this.toolStripMenuItemListParcels.Text = "List Parcels";
             this.toolStripMenuItemListParcels.Click += new System.EventHandler(this.toolStripMenuItemListParcels_Click);
             // 

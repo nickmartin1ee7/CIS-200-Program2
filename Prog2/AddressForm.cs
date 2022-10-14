@@ -95,7 +95,6 @@ namespace UPVApp
 
             errorProvider.SetError(textBoxZip, $"{labelZip.Text} must be a valid, positive whole number");
             e.Cancel = true;
-
         }
     }
 }
