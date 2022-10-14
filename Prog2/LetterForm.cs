@@ -6,6 +6,10 @@ namespace UPVApp
     {
         private readonly UserParcelView _upv;
 
+        /// <summary>
+        /// Create an instance of <see cref="LetterForm"/>.
+        /// </summary>
+        /// <param name="upv">The instance containing addresses and parcels.</param>
         public LetterForm(UserParcelView upv)
         {
             InitializeComponent();
@@ -42,12 +46,20 @@ namespace UPVApp
             Close();
         }
 
-
+        /// <summary>
+        /// Resets an error on a supplied control.
+        /// </summary>
+        /// <param name="control">The control to reset the error for.</param>
         private void ResetErrorProvider(Control control)
         {
             errorProvider.SetError(control, string.Empty);
         }
 
+        /// <summary>
+        /// The default validated event for any <see cref="Control"/>.
+        /// </summary>
+        /// <param name="sender">The calling <see cref="Control"/>.</param>
+        /// <param name="e">Additional arguments.</param>
         private void control_Validated(object sender, EventArgs e)
         {
             ResetErrorProvider((Control)sender);
@@ -63,11 +75,17 @@ namespace UPVApp
 
             comboBox_Validating_AddressIndex(comboBoxOrigin, cancelArgs);
             comboBox_Validating_AddressIndex(comboBoxDestination, cancelArgs);
-            textBox_Validating_IntegerPositive(textBoxFixedCost, cancelArgs);
+            textBox_Validating_DecimalPositive(textBoxFixedCost, cancelArgs);
 
             return !cancelArgs.Cancel;
         }
 
+        /// <summary>
+        /// Validates whether the <see cref="ComboBox"/>'s SelectedIndex property is in an invalid state if user did not select an index.
+        /// Indicates failure to <see cref="errorProvider"/>.
+        /// </summary>
+        /// <param name="sender">The calling <see cref="Control"/> to validate.</param>
+        /// <param name="e">Cancellation arguments to indicate failure or success.</param>
         private void comboBox_Validating_AddressIndex(object sender, CancelEventArgs e)
         {
             var comboBox = (ComboBox)sender;
@@ -78,7 +96,13 @@ namespace UPVApp
             e.Cancel = true;
         }
 
-        private void textBox_Validating_IntegerPositive(object sender, CancelEventArgs e)
+        /// <summary>
+        /// Validates whether the <see cref="TextBox"/>'s Text property is in an invalid state by checking if it is positive.
+        /// Indicates failure to <see cref="errorProvider"/>.
+        /// </summary>
+        /// <param name="sender">The calling <see cref="Control"/> to validate.</param>
+        /// <param name="e">Cancellation arguments to indicate failure or success.</param>
+        private void textBox_Validating_DecimalPositive(object sender, CancelEventArgs e)
         {
             var textBox = (TextBox)sender;
 

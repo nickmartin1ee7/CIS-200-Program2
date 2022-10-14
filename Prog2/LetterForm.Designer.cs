@@ -96,7 +96,7 @@
             this.textBoxFixedCost.Name = "textBoxFixedCost";
             this.textBoxFixedCost.Size = new System.Drawing.Size(142, 23);
             this.textBoxFixedCost.TabIndex = 4;
-            this.textBoxFixedCost.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_IntegerPositive);
+            this.textBoxFixedCost.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_DecimalPositive);
             this.textBoxFixedCost.Validated += new System.EventHandler(this.control_Validated);
             // 
             // buttonOk
