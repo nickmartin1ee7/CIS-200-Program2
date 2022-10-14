@@ -22,6 +22,21 @@
             upv.AddAddress("Test 5", "1010 Binary Blv.", "Tampa", "FL", 33602);
             upv.AddAddress("Test 6", "0101 Binary Blv.", "Tampa", "FL", 33603);
 
+            upv.AddGroundPackage(upv.GetRandomAddress(), upv.GetRandomAddress(),
+                Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100));
+
+            upv.AddTwoDayAirPackage(upv.GetRandomAddress(), upv.GetRandomAddress(),
+                Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100),
+                TwoDayAirPackage.Delivery.Early);
+
+            upv.AddTwoDayAirPackage(upv.GetRandomAddress(), upv.GetRandomAddress(),
+                Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100),
+                TwoDayAirPackage.Delivery.Saver);
+
+            upv.AddNextDayAirPackage(upv.GetRandomAddress(), upv.GetRandomAddress(),
+                Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100), Random.Shared.Next(1, 100),
+                (decimal)(Random.Shared.Next(1, 1000) + Random.Shared.NextDouble()));
+
             return upv;
         }
 
@@ -50,6 +65,25 @@
             var addressForm = new AddressForm(_upv);
 
             addressForm.Show(this);
+        }
+
+        private void toolStripMenuItemListAddress_Click(object sender, EventArgs e)
+        {
+            textBoxListing.Clear();
+            textBoxListing.AppendText("# Addresses" + Environment.NewLine);
+            textBoxListing.AppendText(string.Join(Environment.NewLine + Environment.NewLine, _upv.AddressList));
+        }
+
+        private void toolStripMenuItemListParcels_Click(object sender, EventArgs e)
+        {
+            var totalParcelsCost = _upv.ParcelList.Any()
+                ? _upv.ParcelList.Max(p => p.CalcCost())
+                : 0;
+
+            textBoxListing.Clear();
+            textBoxListing.AppendText("# Parcels" + Environment.NewLine);
+            textBoxListing.AppendText(string.Join(Environment.NewLine + Environment.NewLine, _upv.ParcelList));
+            textBoxListing.AppendText($"{Environment.NewLine + Environment.NewLine}Total Cost: {totalParcelsCost:C}" + Environment.NewLine);
         }
     }
 }

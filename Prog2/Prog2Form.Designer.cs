@@ -39,7 +39,7 @@
             this.toolStripDropDownButtonReport = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripMenuItemListAddress = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemListParcels = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxListing = new System.Windows.Forms.TextBox();
             this.toolStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,14 +69,14 @@
             // toolStripMenuItemAbout
             // 
             this.toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
-            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemAbout.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemAbout.Text = "About";
             this.toolStripMenuItemAbout.Click += new System.EventHandler(this.toolStripMenuItemAbout_Click);
             // 
             // toolStripMenuItemExit
             // 
             this.toolStripMenuItemExit.Name = "toolStripMenuItemExit";
-            this.toolStripMenuItemExit.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemExit.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemExit.Text = "Exit";
             this.toolStripMenuItemExit.Click += new System.EventHandler(this.toolStripMenuItemExit_Click);
             // 
@@ -95,14 +95,14 @@
             // toolStripMenuItemAddress
             // 
             this.toolStripMenuItemAddress.Name = "toolStripMenuItemAddress";
-            this.toolStripMenuItemAddress.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemAddress.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItemAddress.Text = "Address";
             this.toolStripMenuItemAddress.Click += new System.EventHandler(this.toolStripMenuItemAddress_Click);
             // 
             // toolStripMenuItemLetter
             // 
             this.toolStripMenuItemLetter.Name = "toolStripMenuItemLetter";
-            this.toolStripMenuItemLetter.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemLetter.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItemLetter.Text = "Letter";
             // 
             // toolStripDropDownButtonReport
@@ -120,32 +120,34 @@
             // toolStripMenuItemListAddress
             // 
             this.toolStripMenuItemListAddress.Name = "toolStripMenuItemListAddress";
-            this.toolStripMenuItemListAddress.Size = new System.Drawing.Size(148, 22);
+            this.toolStripMenuItemListAddress.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemListAddress.Text = "List Addresses";
+            this.toolStripMenuItemListAddress.Click += new System.EventHandler(this.toolStripMenuItemListAddress_Click);
             // 
             // toolStripMenuItemListParcels
             // 
             this.toolStripMenuItemListParcels.Name = "toolStripMenuItemListParcels";
-            this.toolStripMenuItemListParcels.Size = new System.Drawing.Size(148, 22);
+            this.toolStripMenuItemListParcels.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemListParcels.Text = "List Parcels";
+            this.toolStripMenuItemListParcels.Click += new System.EventHandler(this.toolStripMenuItemListParcels_Click);
             // 
-            // textBox1
+            // textBoxListing
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 25);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(446, 437);
-            this.textBox1.TabIndex = 1;
+            this.textBoxListing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxListing.Location = new System.Drawing.Point(0, 25);
+            this.textBoxListing.Multiline = true;
+            this.textBoxListing.Name = "textBoxListing";
+            this.textBoxListing.ReadOnly = true;
+            this.textBoxListing.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxListing.Size = new System.Drawing.Size(446, 437);
+            this.textBoxListing.TabIndex = 1;
             // 
             // Prog2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 462);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxListing);
             this.Controls.Add(this.toolStripMain);
             this.Name = "Prog2Form";
             this.Text = "Program 2";
@@ -168,7 +170,7 @@
         private ToolStripDropDownButton toolStripDropDownButtonInsert;
         private ToolStripMenuItem toolStripMenuItemAddress;
         private ToolStripMenuItem toolStripMenuItemLetter;
-        private TextBox textBox1;
+        private TextBox textBoxListing;
     }
 }
 
