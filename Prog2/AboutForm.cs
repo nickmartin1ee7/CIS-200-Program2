@@ -9,7 +9,7 @@
             textBoxGradingId.Text = gradingId;
             textBoxCourse.Text = course;
             textBoxAssignment.Text = assignment;
-            textBoxDueDate.Text = dueDate.ToString();
+            textBoxDueDate.Text = dueDate.ToShortDateString();
         }
     }
 }

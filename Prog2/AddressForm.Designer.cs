@@ -76,7 +76,7 @@
             this.labelName.Location = new System.Drawing.Point(17, 9);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(39, 15);
-            this.labelName.TabIndex = 2;
+            this.labelName.TabIndex = 8;
             this.labelName.Text = "Name";
             // 
             // textBoxName
@@ -84,7 +84,7 @@
             this.textBoxName.Location = new System.Drawing.Point(81, 6);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(137, 23);
-            this.textBoxName.TabIndex = 3;
+            this.textBoxName.TabIndex = 2;
             this.textBoxName.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_NotNullOrWhiteSpace);
             this.textBoxName.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -100,7 +100,7 @@
             this.comboBoxState.Location = new System.Drawing.Point(81, 124);
             this.comboBoxState.Name = "comboBoxState";
             this.comboBoxState.Size = new System.Drawing.Size(137, 23);
-            this.comboBoxState.TabIndex = 4;
+            this.comboBoxState.TabIndex = 6;
             this.comboBoxState.Validating += new System.ComponentModel.CancelEventHandler(this.comboBoxState_Validating);
             this.comboBoxState.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -109,7 +109,7 @@
             this.textBoxAddress1.Location = new System.Drawing.Point(81, 35);
             this.textBoxAddress1.Name = "textBoxAddress1";
             this.textBoxAddress1.Size = new System.Drawing.Size(137, 23);
-            this.textBoxAddress1.TabIndex = 6;
+            this.textBoxAddress1.TabIndex = 3;
             this.textBoxAddress1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_NotNullOrWhiteSpace);
             this.textBoxAddress1.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -119,7 +119,7 @@
             this.labelAddress1.Location = new System.Drawing.Point(7, 38);
             this.labelAddress1.Name = "labelAddress1";
             this.labelAddress1.Size = new System.Drawing.Size(49, 15);
-            this.labelAddress1.TabIndex = 5;
+            this.labelAddress1.TabIndex = 9;
             this.labelAddress1.Text = "Address";
             // 
             // textBoxAddress2
@@ -127,7 +127,7 @@
             this.textBoxAddress2.Location = new System.Drawing.Point(81, 64);
             this.textBoxAddress2.Name = "textBoxAddress2";
             this.textBoxAddress2.Size = new System.Drawing.Size(137, 23);
-            this.textBoxAddress2.TabIndex = 8;
+            this.textBoxAddress2.TabIndex = 4;
             this.textBoxAddress2.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_NotNullOrWhiteSpace);
             this.textBoxAddress2.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -136,7 +136,7 @@
             this.textBoxCity.Location = new System.Drawing.Point(81, 95);
             this.textBoxCity.Name = "textBoxCity";
             this.textBoxCity.Size = new System.Drawing.Size(137, 23);
-            this.textBoxCity.TabIndex = 12;
+            this.textBoxCity.TabIndex = 5;
             this.textBoxCity.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_NotNullOrWhiteSpace);
             this.textBoxCity.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -146,7 +146,7 @@
             this.labelCity.Location = new System.Drawing.Point(28, 95);
             this.labelCity.Name = "labelCity";
             this.labelCity.Size = new System.Drawing.Size(28, 15);
-            this.labelCity.TabIndex = 11;
+            this.labelCity.TabIndex = 10;
             this.labelCity.Text = "City";
             // 
             // labelState
@@ -155,7 +155,7 @@
             this.labelState.Location = new System.Drawing.Point(23, 127);
             this.labelState.Name = "labelState";
             this.labelState.Size = new System.Drawing.Size(33, 15);
-            this.labelState.TabIndex = 13;
+            this.labelState.TabIndex = 11;
             this.labelState.Text = "State";
             // 
             // textBoxZip
@@ -163,7 +163,7 @@
             this.textBoxZip.Location = new System.Drawing.Point(81, 153);
             this.textBoxZip.Name = "textBoxZip";
             this.textBoxZip.Size = new System.Drawing.Size(137, 23);
-            this.textBoxZip.TabIndex = 15;
+            this.textBoxZip.TabIndex = 7;
             this.textBoxZip.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxZip_Validating);
             this.textBoxZip.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -173,13 +173,14 @@
             this.labelZip.Location = new System.Drawing.Point(6, 156);
             this.labelZip.Name = "labelZip";
             this.labelZip.Size = new System.Drawing.Size(50, 15);
-            this.labelZip.TabIndex = 14;
+            this.labelZip.TabIndex = 12;
             this.labelZip.Text = "Zipcode";
             // 
             // AddressForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(248, 248);
             this.Controls.Add(this.textBoxZip);
             this.Controls.Add(this.labelZip);

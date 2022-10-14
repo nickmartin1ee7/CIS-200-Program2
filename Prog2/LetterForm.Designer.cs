@@ -47,7 +47,7 @@
             this.labelOrigin.Location = new System.Drawing.Point(39, 9);
             this.labelOrigin.Name = "labelOrigin";
             this.labelOrigin.Size = new System.Drawing.Size(85, 15);
-            this.labelOrigin.TabIndex = 0;
+            this.labelOrigin.TabIndex = 5;
             this.labelOrigin.Text = "Origin Address";
             // 
             // comboBoxOrigin
@@ -57,7 +57,7 @@
             this.comboBoxOrigin.Location = new System.Drawing.Point(130, 6);
             this.comboBoxOrigin.Name = "comboBoxOrigin";
             this.comboBoxOrigin.Size = new System.Drawing.Size(142, 23);
-            this.comboBoxOrigin.TabIndex = 1;
+            this.comboBoxOrigin.TabIndex = 2;
             this.comboBoxOrigin.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox_Validating_AddressIndex);
             this.comboBoxOrigin.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -67,7 +67,7 @@
             this.labelDestination.Location = new System.Drawing.Point(12, 38);
             this.labelDestination.Name = "labelDestination";
             this.labelDestination.Size = new System.Drawing.Size(112, 15);
-            this.labelDestination.TabIndex = 2;
+            this.labelDestination.TabIndex = 6;
             this.labelDestination.Text = "Destination Address";
             // 
             // labelFixedCost
@@ -76,7 +76,7 @@
             this.labelFixedCost.Location = new System.Drawing.Point(62, 67);
             this.labelFixedCost.Name = "labelFixedCost";
             this.labelFixedCost.Size = new System.Drawing.Size(62, 15);
-            this.labelFixedCost.TabIndex = 3;
+            this.labelFixedCost.TabIndex = 7;
             this.labelFixedCost.Text = "Fixed Cost";
             // 
             // comboBoxDestination
@@ -86,7 +86,7 @@
             this.comboBoxDestination.Location = new System.Drawing.Point(130, 35);
             this.comboBoxDestination.Name = "comboBoxDestination";
             this.comboBoxDestination.Size = new System.Drawing.Size(142, 23);
-            this.comboBoxDestination.TabIndex = 4;
+            this.comboBoxDestination.TabIndex = 3;
             this.comboBoxDestination.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox_Validating_AddressIndex);
             this.comboBoxDestination.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -95,7 +95,7 @@
             this.textBoxFixedCost.Location = new System.Drawing.Point(130, 64);
             this.textBoxFixedCost.Name = "textBoxFixedCost";
             this.textBoxFixedCost.Size = new System.Drawing.Size(142, 23);
-            this.textBoxFixedCost.TabIndex = 5;
+            this.textBoxFixedCost.TabIndex = 4;
             this.textBoxFixedCost.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_IntegerPositive);
             this.textBoxFixedCost.Validated += new System.EventHandler(this.control_Validated);
             // 
@@ -104,7 +104,7 @@
             this.buttonOk.Location = new System.Drawing.Point(233, 102);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
-            this.buttonOk.TabIndex = 6;
+            this.buttonOk.TabIndex = 0;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
@@ -114,7 +114,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(21, 102);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 7;
+            this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
@@ -127,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(320, 137);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOk);
