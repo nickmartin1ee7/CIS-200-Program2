@@ -128,7 +128,6 @@
             this.textBoxAddress2.Name = "textBoxAddress2";
             this.textBoxAddress2.Size = new System.Drawing.Size(137, 23);
             this.textBoxAddress2.TabIndex = 4;
-            this.textBoxAddress2.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Validating_NotNullOrWhiteSpace);
             this.textBoxAddress2.Validated += new System.EventHandler(this.control_Validated);
             // 
             // textBoxCity

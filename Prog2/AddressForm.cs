@@ -35,11 +35,23 @@ public partial class AddressForm : Form
     {
         if (!CheckValidators()) return; // Return on failed validation
 
-        _upv.AddAddress(textBoxName.Text,
-            textBoxAddress1.Text,
-            textBoxCity.Text,
-            comboBoxState.SelectedItem.ToString()!,
-            int.Parse(textBoxZip.Text));
+        if (string.IsNullOrWhiteSpace(textBoxAddress2.Text))
+        {
+            _upv.AddAddress(textBoxName.Text,
+                textBoxAddress1.Text,
+                textBoxCity.Text,
+                comboBoxState.SelectedItem.ToString()!,
+                int.Parse(textBoxZip.Text));
+        }
+        else
+        {
+            _upv.AddAddress(textBoxName.Text,
+                textBoxAddress1.Text,
+                textBoxAddress2.Text,
+                textBoxCity.Text,
+                comboBoxState.SelectedItem.ToString()!,
+                int.Parse(textBoxZip.Text));
+        }
 
         Close();
     }
@@ -54,7 +66,6 @@ public partial class AddressForm : Form
 
         textBox_Validating_NotNullOrWhiteSpace(textBoxName, cancelArgs);
         textBox_Validating_NotNullOrWhiteSpace(textBoxAddress1, cancelArgs);
-        textBox_Validating_NotNullOrWhiteSpace(textBoxAddress2, cancelArgs);
         textBox_Validating_NotNullOrWhiteSpace(textBoxCity, cancelArgs);
         comboBoxState_Validating(comboBoxState, cancelArgs);
         textBoxZip_Validating(textBoxZip, cancelArgs);
